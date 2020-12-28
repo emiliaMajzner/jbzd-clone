@@ -1,0 +1,8 @@
+<%if(!currentUser){%>
+    <a href="/register">Sing Up!</a>
+    <a href="/login">Log in!</a>
+    <%}else{%>
+        <form action="/logout">
+            <button>log out</button>
+        </form>
+        <%}%>

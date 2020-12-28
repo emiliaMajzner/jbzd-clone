@@ -1,0 +1,25 @@
+<% layout('layouts/boilerplate')%>
+<div class="post">
+    <div class="post-content">
+        <a href="/meme/<%=post._id%>">
+            <div class="post-content-el">
+                <h2>
+                    <%=post.title%>
+                </h2>
+            </div>
+        </a>
+        <div class="description"><a href="/user/<%=post.author.username%>"><%=post.author.username%></a>
+            <%=post.creationDate%>
+        
+        </div>
+
+        <a href="/meme/<%=post._id%>">
+            <div><img src="<%=post.img%>" alt=""></div>
+        </a>
+
+    </div>
+    <div class="post-sider">
+        <button>+</button>
+    </div>
+</div>
+</a>

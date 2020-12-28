@@ -1,0 +1,16 @@
+<nav>
+    <div class="nav-container">
+        <a href="/"><img class="nav-logo" src="/images/logo.png"></a>
+        <div class="nav-link-container">
+            <a href="/">New</a>
+            <a href="/waiting">Waiting</a>
+            <%if(currentUser){%>
+            <a href="/upload">Upload</a>
+            <%}%>
+            <a href="/random">Random</a>
+            <a href="/top">Top</a>
+            <a href="/categories">Categories</a>
+            
+        </div>
+    </div>
+</nav>
